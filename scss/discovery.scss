@@ -1,0 +1,129 @@
+@import "common.scss";
+
+.wrap {
+  header {
+    .search {
+      position: relative;
+      padding: getvw(51) getvw(264) getvw(33) getvw(220);
+      input {
+        width: getvw(266);
+        height: getvw(51);
+        border: 1px solid #ff9344;
+        border-radius: getvw(50);
+        font-size: getvw(24);
+        padding: 0 getvw(25);
+      }
+      i {
+        font-size: getvw(40);
+        color: #ff9344;
+        position: absolute;
+        right: getvw(280);
+        top: getvw(55);
+        /* top: 50%;
+        transform: translateY(-50%); */
+      }
+    }
+    .looking {
+      width: getvw(512);
+      height: getvw(171);
+      margin: 0 auto;
+      p {
+        font-size: getvw(26);
+        text-align: center;
+        font-weight: bold;
+      }
+      .top,
+      .bottom {
+        display: flex;
+        .topBox,
+        .bottomBox {
+          width: getvw(125);
+          height: getvw(64);
+          background-color: #dcdcdc;
+          margin-left: getvw(4);
+          margin-top: getvw(3);
+          line-height: getvw(64);
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  main {
+    .hot,
+    .recom{
+      
+      .top {
+        display: flex;
+        padding-top: getvw(37);
+        .left {
+          @include left;
+          i {
+            @include iconstyle1;
+          }
+        }
+        .right {
+          padding-left: getvw(400);
+          padding-top: getvw(19.5);
+          i {
+            @include iconstyle2;
+          }
+        }
+      }
+
+      .hotImg {
+        display: flex;
+        height: getvw(355);
+        padding-left: getvw(23);
+        padding-top: getvw(37);
+        .left {
+          width: getvw(280);
+          height: getvww(352);
+        }
+        .right {
+          padding-left: getvw(9);
+          .Top {
+            width: getvw(420);
+            height: getvw(147);
+          }
+          .Bottom {
+            display: flex;
+            padding-top: getvw(8);
+            .bottomLeft {
+              width: getvw(195);
+              height: getvw(197);
+            }
+            .bottomRight {
+              width: getvw(211);
+              height: getvw(197);
+              padding-left: getvw(11);
+            }
+          }
+        }
+      }
+    }
+
+    .recom{
+        .recomBox{  
+          height: getvw(280);
+            .recomImg{
+                display: flex;
+                justify-content: space-around;
+                height: getvw(200);
+                padding-top: getvw(48);
+                .recomImg1{
+                  width: getvw(228);
+                }
+                .recomImg2{
+                  width: getvw(221);
+                }
+                .recomImg3{
+                  width: getvw(220);
+                }
+            }
+        }
+    }
+
+    
+  }
+}

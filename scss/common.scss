@@ -1,0 +1,113 @@
+@import "_normalize.scss";
+@import url("https://at.alicdn.com/t/c/font_3631225_18no3w5yupb.css");
+@import url(../utils/iconfont.css);
+
+@function getvw($w) {
+  @return ($w/750) * 100 + vw;
+}
+
+@mixin left {
+  padding-left: getvw(21);
+}
+@mixin right {
+  padding-left: getvw(400);
+}
+@mixin iconstyle1 {
+  font-size: getvw(50);
+  color: #ff9344;
+}
+
+@mixin iconstyle2 {
+  font-size: getvw(30);
+  color: #ff9344;
+}
+
+header {
+  nav {
+    padding: getvw(48) getvw(18) getvw(23);
+    display: flex;
+    justify-content: space-between;
+    .back {
+      width: getvw(123);
+      height: getvw(57);
+      border: 1px solid #ff9344;
+      border-radius: getvw(20);
+      a {
+        p {
+          font-size: getvw(26);
+          font-weight: bold;
+          padding: getvw(17) getvw(34) getvw(19) getvw(33);
+          color: #000;
+        }
+      }
+    }
+
+    .title {
+      padding-top: getvw(16);
+      font-size: getvw(26);
+    }
+  }
+  //下拉框
+  .city {
+    position: relative;
+    select {
+      width: getvw(159);
+      height: getvw(56);
+      border: 1px solid #ff9344;
+      padding-left: getvw(14);
+      appearance: none;
+    }
+    i {
+      font-size: getvw(30);
+      color: #ff9344;
+      position: absolute;
+      right: getvw(11);
+      top: 60%;
+      transform: translateY(-50%);
+      pointer-events: none;
+    }
+  }
+}
+
+footer {
+  display: flex;
+  width: getvw(652);
+  height: getvw(107);
+  padding: getvw(14) getvw(52) getvw(14) getvw(46);
+  justify-content: space-between;
+
+  .homePage,
+  .category,
+  .discovery,
+  .my {
+    a {
+      i {
+        font-size: getvw(60);
+        color: #ff9344;
+      }
+      .shouye2,.fenlei2,
+      .faxian2,.wode2{
+        display: none;
+      }
+      &:active .shouye2,
+      &:active .fenlei2,
+      &:active .faxian2,
+      &:active .wode2{
+        display: block;
+      }
+      &:active .shouye1,
+      &:active .fenlei1,
+      &:active .faxian1,
+      &:active .wode1{
+        display: none;
+      }
+
+      p {
+        font-size: getvw(26);
+        text-align: center;
+        font-weight: bold;
+        color: #000;
+      }
+    }
+  }
+}

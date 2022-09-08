@@ -1,0 +1,162 @@
+@import "common.scss";
+
+.wrap{
+    header{
+        .message{
+            position: relative;
+            i{
+              font-size: getvw(50);
+              color: #ff9344;
+            }
+            .unread{
+                width: getvw(28);
+                height: getvw(28);
+                background-color: #fa5050;
+                font-size: getvw(20);
+                color: #fff;
+                text-align: center;
+                border-radius: 50%;
+                position: absolute;
+                top: getvw(-7.5);
+                left: getvw(22.5);
+            }
+        }
+    }
+    main{
+        //用户信息
+        .userInfo{
+            display: flex;
+            padding-left: getvw(23);
+            padding-top: getvw(19);
+            .avatarImg{
+                width: getvw(170);
+                height: getvw(170);
+            }
+            .btnBox{
+                padding-left: getvw(25);
+                button{
+                    border-style: none;
+                    background-color: #fff;
+                    padding-top: getvw(35);
+                    &:first-child{
+                        font-size: getvw(30);
+                        font-weight: bold;
+                    }
+                    &:last-child{
+                        font-size: getvw(26);
+                        color: #9d9d9d;
+                    }
+                }
+            }
+            .moreInfo{
+                width: getvw(46);
+                height: getvw(46);
+                padding-left: getvw(307.5);
+                padding-top: getvw(47.5);
+                i{
+                    font-size: getvw(46);
+                    color: #010101; 
+                }
+            }
+        }
+
+        //我的
+        .myBox{
+            display: flex;
+            justify-content: space-around;
+            padding-top: getvw(26);
+            text-align: center;
+            i{
+                font-size: getvw(60);
+                color: #fff;
+            }
+            p{
+                font-size: getvw(26);
+                padding-top: getvw(14);
+            }
+            .comment{
+                width: getvw(195);
+                height: getvw(151);
+                background-color: #b2e0a0;
+                
+            }
+            .collect{
+                width: getvw(195);
+                height: getvw(151);
+                background-color: #a0dce0;
+            }
+            .coupon{
+                width: getvw(195);
+                height: getvw(151);
+                background-color: #e0b7a0;
+            }
+        }
+
+        //我的钱包
+        .walletBox,
+        .commentBox,
+        .friendBox,
+        .footBox,
+        .settingBox,
+        .contactBox{
+            padding-top: getvw(32);
+            padding-left: getvw(23);
+            .myWallet,
+            .myComment,
+            .myFreind,
+            .myFoot,
+            .setting,
+            .contact{
+                display: flex;
+                justify-content: space-between;
+                .leftSide{
+                    i{
+                        font-size: getvw(57);
+                        color: rgb(239,156,10);
+                        vertical-align: middle;
+                    }
+                    span{
+                        font-size: getvw(26);
+                        padding-left: getvw(0.5);   
+                    }
+                }
+                .rightSide{
+                    padding-right: getvw(21);
+                    padding-top: getvw(12.5);
+                    span{
+                        font-size: getvw(24);
+                    }
+                    i{
+                        font-size: getvw(25);
+                        color: #ff9344;
+                    }
+                }
+            }
+        }
+
+        .settingBox{
+            padding-top: getvw(79);
+        }
+
+        .exitBox{
+            display: flex;
+            height: getvw(76);
+            justify-content: space-around;
+            padding-bottom: getvw(26);
+            padding-top: getvw(36);
+            .exit,
+            .logout{
+                button{
+                width: getvw(147);
+                height: getvw(76);
+                background-color: rgb(255,147,68);
+                border-radius: getvw(20);
+                border-style: none;
+                font-size: getvw(24);
+                color: #fff;
+                }
+            }
+        }
+
+    }
+}

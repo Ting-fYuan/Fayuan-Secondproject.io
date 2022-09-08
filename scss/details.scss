@@ -1,0 +1,166 @@
+@import "common.scss";
+
+.wrap{
+    header{
+        nav{
+            .shoucang{
+                i{
+                    font-size: getvw(50);
+                    color: #ff9344;
+                }
+            }
+        }
+    }
+    main{
+        .imgBox{
+            img{
+               width: getvw(705);
+               height: getvw(260);
+               padding: getvw(25) getvw(21) getvw(36) getvw(24); 
+            }
+        }
+        .details{
+            display: flex;
+            padding-top: getvw(36);
+            justify-content: space-between;
+            .left{
+                font-size: getvw(72);
+                color: #ff9344;
+                padding-left: getvw(23);
+            }
+            .right{
+                button{
+                    width: getvw(111);
+                    height: getvw(59);
+                    background-color: #ff9344;
+                    border-radius: getvw(20);
+                    border-style: none;
+                    margin-right: getvw(20);
+                    font-size: getvw(30); 
+                }
+            }
+        }
+
+        .evaluation{
+            display: flex;
+            justify-content: space-between;
+            padding-top: getvw(57);
+            .left{
+                i{
+                    font-size: getvw(38);
+                    color: #ff9344;
+                    padding-left: getvw(25);
+                }
+                span{
+                    font-size: getvw(30);
+
+                    &:last-child{
+                        color: #ff9344;
+                    }
+                }
+            }
+            .right{
+                span{
+                    font-size: getvw(26);
+                    color: #8e8e8e;
+                    padding-right: getvw(19);
+                }
+            }
+        }
+
+        .suit{
+            display: flex;
+            justify-content: space-between;
+            width: getvw(664);
+            height: getvw(67);
+            background-color: #ff9344;
+            margin: 0 auto;
+            margin-top: getvw(36);
+            .left{
+                font-size: getvw(30);
+                color: #fff;
+                line-height: getvw(67);
+                padding-left: getvw(11);
+            }
+            .right{
+                i{
+                font-size: getvw(40);
+                color: #fff;
+                line-height: getvw(67);
+                padding-right: getvw(9);
+                }
+            }
+        }
+
+        .store{
+            display: flex;
+            padding-top: getvw(10);
+            .left{
+                position: relative;
+                padding-left: getvw(25);
+                img{
+                    width: getvw(177);
+                    height: getvw(176);
+                }
+                .address{
+                    width: getvw(177);
+                    height: getvw(39);
+                    line-height: getvw(39);
+                    font-size: getvw(24);
+                    background-color: #ffffff;
+	                opacity: 0.67;
+                    text-align: center;
+                    position: absolute;
+                    top: getvw(75);
+                    left: getvw(22.5);
+                }
+            }
+            .mid{
+                padding-left: getvw(24);
+                p{
+                    &:first-of-type{
+                        font-size: getvw(30);
+                        font-weight: bold;
+                        padding-top: getvw(8);
+                    }
+                    &:last-of-type{
+                        font-size: getvww(24);
+                        color: #929292;
+                        padding-top: getvw(13);
+                    }
+                }
+                i{
+                    font-size: getvw(36);
+                    color: #ff9344;
+                    padding-top: getvw(9);
+                }
+                span{
+                    font-size: getvw(26);
+                    color: #929292;
+                }
+                a{
+                    p{
+                        font-size: getvw(20);
+                        color: #ff9344;
+                        padding-top: getvw(22);
+                    }
+                }
+            }
+            .right{
+                button{
+                    margin-left: getvw(90);
+                    margin-top: getvw(90);
+                    margin-right: getvw(21);
+                    width: getvw(111);
+                    height: getvw(59);
+                    background-color: #ff9344;
+                    border-radius: getvw(20);
+                    border-style: none;
+                    color: #fff;
+                    font-size: getvw(30);
+                    
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,209 @@
+
+@import "common.scss";
+
+
+.wrap {
+
+  //logo区域及轮播图区域
+    header {
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: getvw(17) getvw(23) getvw(9) getvw(23);
+      
+      //logo
+      .logo {
+        img {
+          width: getvw(123);
+          height: getvw(123);
+        }
+      }
+
+      //搜索框
+      .search {
+        position: relative;
+        input {
+          width: getvw(266);
+          height: getvw(51);
+          border: 1px solid #ff9344;
+          border-radius: getvw(50);
+          font-size: getvw(24);
+          padding: 0 getvw(25);
+        }
+        i{
+            font-size: getvw(40);
+            color: #ff9344;
+            position: absolute;
+            right: getvw(24); 
+            top: 50%;
+            transform: translateY(-50%);
+         }
+      }
+
+    }
+
+    //轮播图
+      .banner{
+        width: getvw(750);
+        height: getvw(287);
+        overflow: hidden;
+        ul{
+            display: flex;
+            animation: move 5s ease infinite alternate;
+            li{
+                flex-shrink: 0;
+                img{
+                    width: getvw(750);
+                    height: getvw(287);
+                }
+            }
+        }
+        @keyframes move {
+            from{
+              transform: translateX(0px);
+            }
+            25%{
+              transform: translateX(getvw(-750));
+    
+            }
+            50%{
+              transform: translateX(getvw(-1500));
+    
+            }
+            to{
+              transform: translateX(getvw(-2250));
+            }
+        }
+    }
+    
+  }
+
+  //主体区域
+  main{
+    //优惠团购
+    .shopping{
+      width: getvw(708);
+      height: getvw(291);
+      padding-top: getvw(30);
+      .youHui{
+        display: flex;
+        .Info{
+          @include left;
+          i{
+            @include iconstyle1;
+          }
+          span{
+            font-size:getvw(30) ;
+          }
+        }
+        .more{
+          @include right;
+          i{
+            @include iconstyle2;
+          }
+          span{
+            font-size: getvw(24);
+          }
+        }
+      }
+      
+      .boxImg{
+        display: flex;
+        justify-content: space-around;
+        img{
+          padding-top: getvw(20);
+        }
+        .boxImg1{
+          width: getvw(241);
+          height: getvw(94);
+          
+        }
+        .boxImg2{
+          width: getvw(241);
+          height: getvw(94);
+        }
+      }
+     
+    }
+
+    //猜你喜欢
+    .like{
+      width: getvw(732);
+      padding-top: getvw(30); 
+      .guessYou{
+        width: getvw(708);
+        height: getvw(49);
+        display: flex;
+        .guess{
+          @include left;
+          
+          i{
+            @include iconstyle1;
+          }
+          span{
+            font-size:getvw(30) ;
+          }
+        }
+        .more{ 
+          @include right;
+         i{
+          @include iconstyle2;
+        }
+        span{
+          font-size: getvw(24);
+        }
+        }
+      }
+      
+      .foodBox{
+        width: getvw(717);
+        height: getvw(170);       
+        display: flex;
+        padding-left: getvw(16);
+        margin-top: getvw(18);
+          .foodImg{
+            a{
+              img{
+                width: getvw(211);
+                height: getvw(164); 
+              }
+            }
+        }
+        
+        .details{
+          padding-left: getvw(28);
+          padding-top: getvw(20);
+          p{
+            &:first-of-type{
+              font-size: getvw(30);
+              font-weight: bold;
+            }
+            &:nth-of-type(2){
+              font-size: getvw(22);
+              color: #494949;
+              padding-top: getvw(18);
+            }
+            &:last-of-type{
+              font-size: getvw(32);
+              color: #ff9344;
+              padding-top: getvw(22);
+            }
+          }
+        }
+        .distance{
+          padding-top: getvw(20);
+          padding-left: getvw(62);
+          p{
+              font-size: getvw(22);
+              color: #494949;
+              padding-bottom: getvw(69);
+          }
+        }
+      }
+    }
+  }
+   
+
+}
+
